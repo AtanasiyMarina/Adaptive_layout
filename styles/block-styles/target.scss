@@ -1,0 +1,349 @@
+.target {
+  margin-bottom: 80px;
+  @media (min-width:$tablet-size) {
+    margin-bottom: 100px;
+  }
+  @media (min-width: $laptop-medium-size) {
+    margin-bottom: 150px;
+  }
+  &__subtitle{
+    margin: 0 auto 118px;
+    @media (min-width:$tablet-size) {
+      margin: 0 0 58px auto;
+    }
+    @media (min-width: $laptop-size) {
+      margin: 0 0 28px auto;
+    }
+    @media (min-width: $laptop-medium-size) {
+      margin: 0 94px 115px auto;
+    }
+    @media (min-width: $big-screen-size) {
+      margin: 0 195px 157px auto;
+    }
+  }
+  &__span {
+    position: absolute;
+    font-family: $font-medium;
+    font-size: 12px;
+    line-height: 15px;
+    transform: translate(-8px, -85px) $rotate-90;
+    @media (min-width:$tablet-size) {
+      font-size: 14px;
+      line-height: 18px;
+      transform: translate(-8px, -123px) $rotate-90;
+    }
+    @media (min-width: $laptop-medium-size) {
+      font-size: 16px;
+      line-height: 20px;
+      transform: translate(-8px, -212px) $rotate-90;
+    }
+    @media (min-width: $big-screen-size) {
+      transform: translate(-8px, -248px) $rotate-90;
+    }
+  }
+  &__item {
+    margin-bottom: 107px;
+    height: 185px;
+    background-color: $blue-color;
+    @media (min-width:$tablet-size) {
+      margin-bottom: 120px;
+      height: 240px;
+    }
+    @media (min-width: $laptop-size) {
+      margin-bottom: 145px;
+      height: 243px;
+    }
+    @media (min-width: $laptop-medium-size) {
+      margin-bottom: 292px;
+      height: 330px;
+    }
+    @media (min-width: $big-screen-size) {
+      margin-bottom: 333px;
+      height: 425px;
+    }
+  }
+  &__item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    padding: 15px 0 0;
+    @media (min-width:$tablet-size) {
+      padding: 50px 0 0;
+    }
+    @media (min-width: $laptop-size) {
+      padding: 68px 0 0;
+    }
+    @media (min-width: $laptop-medium-size) {
+      padding: 107px 0 0;
+    }
+    @media (min-width: $big-screen-size) {
+      padding: 144px 0 0;
+    }
+  }
+  &__img {
+    position: absolute;
+    left: 0;
+    top: -21px;
+    object-fit: contain;
+    width: 180px;
+    height: 240px;
+    @media (min-width:$tablet-size) {
+      width: 280px;
+      height: 380px;
+      top: -70px;
+      margin-left: 49px;
+    }
+    @media (min-width: $laptop-size) {
+      width: 322px;
+      height: 434px;
+      top: -96px;
+      margin-left: 45px;
+    }
+    @media (min-width: $laptop-medium-size) {
+      width: 520px;
+      height: 720px;
+      top: -195px;
+      margin-left: 58px;
+    }
+    @media (min-width: $laptop-L-size) {
+      top: -198px;
+      margin-left: 45px;
+    }
+    @media (min-width: $big-screen-size) {
+      width: 640px;
+      height: 890px;
+      top: -232px;
+      margin-left: 50px;
+    }
+  }
+  &__filter-title {
+    position: absolute;
+    transform: translate(-105px, 20px) $rotate-90;
+    font-family: $font-medium;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: $letter-space-3;
+    text-transform: uppercase;
+    @media (min-width:$tablet-size) {
+      transform: translate(-243px, 20px) $rotate-90;
+    }
+    @media (min-width: $laptop-size) {
+      transform: translate(-260px, 20px) $rotate-90;
+    }
+    @media (min-width: $laptop-medium-size) {
+      transform: translate(-444px, 20px) $rotate-90;
+    }
+    @media (min-width: $laptop-L-size) {
+      transform: translate(-440px, 20px) $rotate-90;
+    }
+    @media (min-width: $big-screen-size) {
+      transform: translate(-545px, 20px) $rotate-90;
+    }
+  }
+  &__numbers {
+    @media (min-width:$tablet-size) {
+      margin-top: 17px;
+    }
+    @media (min-width: $laptop-size) {
+      margin-top: -60px;
+    }
+    @media (min-width: $big-screen-size) {
+      margin-top: -120px;
+    }
+  }
+  &__number-item {
+    font-size: 13px;
+    line-height: 30px;
+    padding-left: 4px;
+
+    &_border_black {
+      padding-right: 8px;
+      border-right: 1px solid $black-color;
+    }
+  }
+  &__filters {
+    margin: 50px 62px 0 0;
+    @media (min-width:$tablet-size) {
+      margin: -39px 140px 0 0;
+    }
+    @media (min-width: $laptop-size) {
+      margin: 33px 140px 0 0;
+    }
+    @media (min-width: $laptop-medium-size) {
+      margin: 33px 308px 0 0;
+    }
+    @media (min-width: $big-screen-size) {
+      margin: 99px 387px 0 0;
+    }
+  }
+  &__filters-item {
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: $letter-space-3;
+    @media (min-width:$tablet-size) {
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+    &_margin_bottom {
+      @media (min-width:$tablet-size) {
+        margin-bottom: 30px;
+      }
+      @media (min-width: $laptop-medium-size) {
+        margin-bottom: 60px;
+      }
+    }
+
+  }
+  &__clear-button {
+    position: relative;
+    bottom: -75px;
+    right: 52px;
+    padding: 0;
+    width: 78px;
+    height: 33px;
+    font-family: $font-medium;
+    font-size: 13px;
+    line-height: 30px;
+    background-color: $white-color;
+    text-align: left;
+    border: none;
+    @media (min-width:$tablet-size) {
+      right: 192px;
+    }
+    @media (min-width: $laptop-size) {
+      right: 210px;
+    }
+    @media (min-width: $laptop-medium-size) {
+      right: 394px;
+    }
+    @media (min-width: $laptop-L-size) {
+      right: 390px;
+    }
+    @media (min-width: $big-screen-size) {
+      bottom: -170px;
+      right: 495px;
+    }
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 8px;
+      right: 2px;
+      width: 12.99px;
+      height: 0.99px;
+      background-color: $black-color;
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+  &__fashion-container {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 767px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__fashion-title {
+    margin: 0 0 15px 0;
+    @media (min-width:$tablet-size) {
+      margin: 0 0 20px 360px;
+    }
+    @media (min-width: $laptop-size) {
+      margin: 0 0 12px 398px;
+    }
+    @media (min-width: $laptop-medium-size) {
+      margin: 0 0 0 600px;
+    }
+    @media (min-width: $laptop-L-size) {
+      margin: 0 0 0 595px;
+    }
+    @media (min-width: $big-screen-size) {
+      margin: 0 0 0 720px;
+    }
+  }
+  &__fashion-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  &__clothing-parameters {
+    display: flex;
+    margin: 0 0 30px 0;
+    @media (min-width:$tablet-size) {
+      margin: 0 0 30px 59px;
+    }
+    @media (min-width: $laptop-size) {
+      margin: 0 0 32px 78px;
+    }
+    @media (min-width: $laptop-medium-size) {
+      margin: 0 0 32px 100px;
+    }
+    @media (min-width: $laptop-L-size) {
+      margin: 0 0 32px 95px;
+    }
+    @media (min-width: $big-screen-size) {
+      margin: 0 0 32px 154px;
+    }
+  }
+  &__parameters-item {
+    margin: 0 15px 0 0;
+    font-size: 13px;
+    line-height: 30px;
+    color: #808080;
+    @media (min-width: $laptop-medium-size) {
+      margin: 0 60px 0 0;
+    }
+
+    span {
+      font-family: $font-medium;
+      color: $black-color;
+      margin-left: 4px;
+    }
+  }
+  &__fashion-img {
+    width: 300px;
+    height: 400px;
+    background-color: $blue-color;
+    @media (min-width: $laptop-size) {
+      width: 370px;
+      height: 455px;
+    }
+    @media (min-width: $laptop-medium-size) {
+      width: 570px;
+      height: 700px;
+    }
+    @media (min-width: $big-screen-size) {
+      width: 690px;
+      height: 850px;
+    }
+    img {
+      width: 186px;
+      height: 364px;
+      margin: 36px auto 0 64px;
+      @media (min-width: $laptop-size) {
+        width: 209px;
+        height: 414px;
+        margin: 41px auto 0 72px;
+      }
+      @media (min-width: $laptop-medium-size) {
+        width: 322px;
+        height: 637px;
+        margin: 63px auto 0 111px;
+      }
+      @media (min-width: $big-screen-size) {
+        width: 390px;
+        height: 773px;
+        margin: 76px auto 0 134px;
+      }
+    }
+  }
+}

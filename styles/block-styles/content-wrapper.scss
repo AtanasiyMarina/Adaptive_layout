@@ -1,0 +1,23 @@
+.content-wrapper{
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  @media (min-width: 414px){
+    max-width: 460px;
+  }
+  @media (min-width: $tablet-size){
+    max-width: 720px;
+  }
+  @media (min-width: $laptop-size){
+    max-width: 794px;
+  }
+  @media (min-width: $laptop-medium-size){
+    max-width: 1200px ;
+  }
+  @media (min-width: $laptop-L-size){
+    max-width: 1190px ;
+  }
+  @media (min-width: $big-screen-size){
+    max-width: 1440px ;
+  }
+}

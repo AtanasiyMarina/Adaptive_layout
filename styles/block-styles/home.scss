@@ -1,0 +1,286 @@
+.home {
+  position: relative;
+  z-index: 2;
+  height: 457px;
+  margin-bottom: 80px;
+  @media (min-width: $tablet-size) {
+    margin-bottom: 100px;
+  }
+  @media (min-width: $laptop-size) {
+    height: 530px;
+  }
+  @media (min-width: $laptop-medium-size) {
+    height: 810px;
+    margin-bottom: 150px;
+  }
+  @media (min-width: $big-screen-size) {
+    height: 1055px;
+  }
+  &__picture {
+    position: absolute;
+  }
+  &__left-bg {
+    position: absolute;
+    z-index: 3;
+    width: 45%;
+    height: 100%;
+    background-color: #F1F1EF;
+  }
+  &__container {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    height: 457px;
+    background-image: url('../../images/home-page/oblojka.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    @media (min-width: $laptop-size) {
+      height: 530px;
+    }
+    @media (min-width: $laptop-medium-size) {
+      height: 810px;
+    }
+    @media (min-width: $big-screen-size) {
+      height: 1055px;
+    }
+
+  }
+  &__inform-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    padding: 30px 0 30px 0;
+    background-color: #F1F1EF;
+    @media (min-width: $tablet-size) {
+      width: 47%;
+    }
+    @media (min-width: $laptop-size) {
+      padding:30px 0 31px 0;
+    }
+    @media (min-width: $laptop-medium-size) {
+      padding:30px 0 61px 0;
+    }
+    @media (min-width: $big-screen-size) {
+      padding:30px 0 50px 0;
+    }
+  }
+  &__logo {
+    font-family: $font-montserrat;
+    font-weight: bold;
+    font-size: 16px;
+    color: $black-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    @media (min-width: $laptop-size) {
+      font-size: 20px;
+      margin-bottom: 80px;
+    }
+    @media (min-width: $laptop-medium-size) {
+      margin-bottom: 154px;
+    }
+    @media (min-width: $big-screen-size) {
+      margin-bottom: 217px;
+    }
+  }
+  &__main-title {
+    font-family: $font-bold;
+    font-size: 42px;
+    letter-spacing: 0.02em;
+    line-height: 100%;
+    margin: 0 0 166px;
+    width: 200px;
+    @media (min-width: $laptop-size) {
+      margin: 0 0 140px;
+    }
+    @media (min-width: $laptop-medium-size) {
+      margin: 0 0 314px;
+      font-size: 72px;
+    }
+    @media (min-width: $big-screen-size) {
+      margin: 0 0 500px;
+    }
+  }
+  &__subtitle {
+    width: 81px;
+    font-family: $font-medium;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    text-align: right;
+    transform: translate(-25px, -118px) $rotate-90;
+    @media (min-width: $laptop-size) {
+      font-size: 14px;
+      transform: translate(-25px, -130px) $rotate-90;
+    }
+    @media (min-width: $laptop-medium-size) {
+      transform: translate(-25px, -280px) $rotate-90;
+    }
+    @media (min-width: $big-screen-size) {
+      transform: translate(-25px, -465px) $rotate-90;
+    }
+  }
+  &__navigation-elements {
+    display: flex;
+    z-index: 1;
+    width: 90vw;
+    @media (min-width: 440px) {
+      width: 175px;
+    }
+    @media (min-width:$tablet-size) {
+      width: 264px;
+    }
+    @media (min-width: $laptop-medium-size) {
+      width: 424px;
+    }
+    @media (min-width: $big-screen-size) {
+      width: 504px;
+    }
+  }
+  &__menu {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 28px;
+    cursor: pointer;
+    @media (min-width:$tablet-size) {
+      margin-right: 60px;
+    }
+    @media (min-width: $laptop-medium-size) {
+      margin-right: 80px;
+    }
+    @media (min-width: $big-screen-size) {
+      margin-right: 117px;
+    }
+    span{
+      position: absolute;
+      top: 9px;
+      width: 100%;
+      height: 2px;
+      background-color: $black-color;
+    }
+    &:after, &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $black-color;
+      border-radius: 3px;
+      transition: transform .2s;
+    }
+    &:before {
+      top: 2px;
+    }
+    &:after {
+      bottom: 2px;
+    }
+    &.active {
+      &:before {
+        transform: rotate(45deg);
+        top: 9px;
+      }
+      &:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+      }
+      span{
+        display: none;
+      }
+    }
+  }
+  &__elements-item {
+    height: 20px;
+    margin-right: 10px;
+    @media (min-width:$tablet-size) {
+      margin-right: 18px;
+    }
+    @media (min-width: $laptop-medium-size) {
+      margin-right: 15px;
+    }
+    @media (min-width: $big-screen-size) {
+      margin-right: 2px;
+    }
+  }
+  &__lang {
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+    span{
+      margin-right: 4px;
+    }
+  }
+  &__svg{
+    width: 9px;
+    height: 5px;
+    padding-top: 7px;
+    transition: transform .2s;
+    &_active{
+      transform: translate(0,7px) rotate(180deg);
+    }
+  }
+
+  &__aside {
+    position: absolute;
+    right: 0;
+    height: 434px;
+    text-align: right;
+    padding: 25px 0 0 0;
+    background-color: $white-color;
+    @media (min-width:$tablet-size) {
+      width: 15%;
+    }
+    @media (min-width: $laptop-size) {
+      height: 507px;
+    }
+    @media (min-width: $laptop-medium-size) {
+      height: 787px;
+    }
+    @media (min-width: $big-screen-size) {
+      width: 13%;
+      height: 1032px;
+    }
+    span {
+      display: block;
+      font-size: 14px;
+      line-height: 18px;
+      white-space: nowrap;
+      @media (min-width:$tablet-size) {
+        font-size: 16px;
+      }
+    }
+  }
+  &__aside-text {
+    transform: translate(34px, 128px) rotate(90deg);
+    @media (min-width:$tablet-size) {
+      transform: translate(50px, 143px) rotate(90deg);
+    }
+    @media (min-width: $laptop-size) {
+      transform: translate(50px, 176px) rotate(90deg);
+    }
+    @media (min-width: $laptop-medium-size) {
+      transform: translate(80px, 275px) rotate(90deg);
+    }
+    @media (min-width: $big-screen-size) {
+      transform: translate(80px, 415px) rotate(90deg);
+    }
+  }
+  &__year {
+    font-family: $font-medium;
+    transform: translate(34px, 182px) rotate(90deg);
+    @media (min-width:$tablet-size) {
+      transform: translate(50px, 193px) rotate(90deg);
+    }
+    @media (min-width: $laptop-size) {
+      transform: translate(50px, 222px) rotate(90deg);
+    }
+    @media (min-width: $laptop-medium-size) {
+      transform: translate(80px, 322px) rotate(90deg);
+    }
+    @media (min-width: $big-screen-size) {
+      transform: translate(80px, 465px) rotate(90deg);
+    }
+  }
+}

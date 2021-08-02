@@ -1,0 +1,87 @@
+.colors{
+  position: relative;
+  &__subtitle {
+    margin: 0 auto 100px;
+    @media (min-width: $tablet-size) {
+      margin: 0 0 50px auto;
+    }
+    @media (min-width: $laptop-medium-size) {
+      margin: 0 94px 50px auto;
+    }
+    @media (min-width: $big-screen-size) {
+      margin: 0 195px 50px auto;
+    }
+  }
+  &__aside-dark{
+    position: absolute;
+    font-family: $font-medium;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: $letter-space-3;
+    text-transform: uppercase;
+    transform: translate(-10px, -65px) $rotate-90;
+    @media (min-width:$tablet-size) {
+      font-size: 16px;
+      line-height: 20px;
+      transform: translate(-10px, -105px) $rotate-90;
+    }
+  }
+  &__title-block{
+    margin: 0 0 125px 0;
+    @media (min-width:$tablet-size) {
+      margin: 0 0 40px 0;
+    }
+    @media (min-width:$laptop-size) {
+      margin: 0 0 40px 0;
+    }
+    @media (min-width:$laptop-medium-size) {
+      margin: 0;
+    }
+  }
+  &__main-container{
+    position: relative;
+  }
+  &__main-item{
+    position: relative;
+    margin-bottom: 50px;
+  }
+  &__color-name{
+    position: absolute;
+    right: 0;
+    transform: translate(20px, -60px) $rotate-90;
+    font-family: $font-medium;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: $letter-space-3;
+    @media (min-width:$tablet-size) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+  }
+  &__main-color{
+    margin-left: auto;
+    width: 133px;
+    height: 50px;
+    background-color: #9A0034;
+    @media (min-width: $tablet-size) {
+      width: 190px;
+      height: 50px;
+    }
+    @media (min-width: $laptop-size) {
+      width: 210px;
+    }
+    @media (min-width: $laptop-medium-size) {
+      width: 280px;
+      height: 70px;
+    }
+  }
+  &__items-group-first{
+    display: flex;
+    margin-bottom: 50px;
+  }
+  &__items-group-second{
+    display: flex;
+    justify-content: space-between;
+  }
+}

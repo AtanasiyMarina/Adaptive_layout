@@ -1,0 +1,34 @@
+.product-name {
+  display: block;
+  width: 168px;
+  margin: 15px 0 15px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  @media (min-width: $laptop-medium-size) {
+    font-size: 14px;
+    line-height: 18px;
+    width: 277px;
+  }
+
+  &:-webkit-any-link {
+    color: $black-color;
+  }
+
+  &:active {
+    color: $black-color;
+  }
+  &:focus-visible{
+    outline: none;
+  }
+
+  &__price {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

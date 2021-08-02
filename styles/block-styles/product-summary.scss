@@ -1,0 +1,86 @@
+.product-summary {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 217px;
+  @media (min-width:$tablet-size) {
+    align-self: flex-start;
+    width: 270px;
+  }
+  @media (min-width: $laptop-size) {
+    width: 290px;
+  }
+  @media (min-width: $laptop-medium-size) {
+    width: 468px;
+  }
+  @media (min-width: $laptop-L-size) {
+    width: 470px;
+  }
+  @media (min-width: $big-screen-size) {
+    width: 570px;
+  }
+
+  &__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 5px 0 30px auto;
+    @media (min-width:$tablet-size) {
+      margin: 5px 0 44px auto;
+    }
+    @media (min-width: $laptop-size) {
+      margin: 5px 0 37px auto;
+    }
+    @media (min-width: $laptop-medium-size) {
+      margin: 5px 0 36px auto;
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  &__photo {
+    background-color: $blue-color;
+    width: 170px;
+    height: 240px;
+    @media (min-width:$tablet-size) {
+      width: 172px;
+      height: 246px;
+    }
+    @media (min-width: $laptop-medium-size) {
+      width: 280px;
+      height: 400px;
+    }
+    @media (min-width: $big-screen-size) {
+      width: 330px;
+      height: 470px;
+    }
+  }
+
+  &__span {
+    position: absolute;
+    transform: translate(165px, 247px) $rotate-90;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    @media (min-width:$tablet-size) {
+      transform: translate(216px, 247px) $rotate-90;
+    }
+    @media (min-width: $laptop-size) {
+      transform: translate(228px, 247px) $rotate-90;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    @media (min-width: $laptop-medium-size) {
+      transform: translate(396px, 398px) $rotate-90;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+  }
+}

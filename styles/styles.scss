@@ -1,0 +1,51 @@
+@import "../styles/variables";
+@font-face {
+  font-family: 'Cera Pro';
+  font-style: normal;
+  src:    local('Cera Pro'),
+          url('../fonts/CeraPro-Regular.woff');
+}
+@font-face {
+  font-family: 'Cera Pro Medium';
+  font-style: normal;
+  font-weight: 500;
+  src:    local('Cera Pro'),
+  url('../fonts/CeraPro-Medium.woff');
+}
+@font-face {
+  font-family: 'Cera Pro Bold';
+  font-style: normal;
+  font-weight: bold;
+  src:    local('Cera Pro'),
+  url('../fonts/CeraPro-Bold.woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  src:    local('Montserrat'),
+  url('../fonts/Montserrat-Regular.woff');
+}
+
+*body{
+  box-sizing: border-box;
+  color: $black-color;
+  font-family: 'Cera Pro',sans-serif;
+}
+@import "block-styles/content-wrapper";
+@import "block-styles/home";
+@import "block-styles/target";
+@import "block-styles/common";
+@import "block-styles/product-summary";
+@import "block-styles/color-parameters";
+@import "block-styles/product-name";
+@import "block-styles/colors";
+@import "block-styles/title-block";
+@import "block-styles/color-item";
+@import "block-styles/color-block";
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+.title-block{
+  position: relative;
+  &__main-title{
+    margin: 0;
+  }
+  &__subtitle{
+    position: absolute;
+    left: 150px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 18px;
+    white-space: nowrap;
+    @media (min-width:$laptop-size) {
+      left: 168px;
+      font-size: 14px;
+    }
+    @media (min-width:$laptop-medium-size) {
+      left: 255px;
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.color-block{
+  margin-bottom: 15px;
+  width: 70px;
+  height: 50px;
+  @media (min-width: $laptop-size) {
+    width: 90px;
+  }
+  @media (min-width: $laptop-medium-size) {
+    margin-bottom: 10px;
+    width: 130px;
+    height: 60px;
+  }
+  &_bg_purple{
+    background-color: #E8D8D9;
+  }
+  &_bg_pink{
+    background-color: #D7969E;
+    margin-right: 70px;
+  }
+  &_bg_light-grey{
+    background-color: #DEDCDC;
+  }
+  &_bg_dark-grey{
+    background-color: #898989;
+  }
+  &_bg_grey{
+    background-color: #B7B7B7;
+  }
+  &_bg_black{
+    background-color: $black-color;
+  }
+}

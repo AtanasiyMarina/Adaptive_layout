@@ -1,0 +1,57 @@
+.common-main-title{
+  width: 220px;
+  font-family: $font-bold;
+  font-size: 32px;
+  line-height: 40px;
+  @media (min-width:$laptop-size) {
+    width: 243px;
+    font-size: 36px;
+    line-height: 45px;
+  }
+  @media (min-width:$laptop-medium-size) {
+    width: 470px;
+    font-size: 56px;
+    line-height: 70px;
+  }
+}
+.common-title{
+  font-size: 22px;
+  line-height: 28px;
+  margin: 0 0 30px;
+  @media (min-width:$tablet-size) {
+    margin: 0 0 45px 360px;
+  }
+  @media (min-width: $laptop-size) {
+    margin: 0 0 62px 398px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  @media (min-width: $laptop-medium-size) {
+    font-size: 30px;
+    line-height: 38px;
+    margin: 0 0 50px 600px;
+  }
+  @media (min-width: $laptop-L-size) {
+    margin: 0 0 50px 595px;
+  }
+  @media (min-width: $laptop-L-size) {
+    margin: 0 0 50px 720px;
+  }
+}
+.common-subtitle{
+  font-family: $font-montserrat;
+  font-size: 12px;
+  line-height: 16px;
+  color: #292929;
+  width: 270px;
+  @media (min-width: $laptop-size) {
+    width: 290px;
+    line-height: 17px;
+    font-size: 13px;
+  }
+  @media (min-width: $laptop-medium-size) {
+    width: 375px;
+    line-height: 19px;
+    font-size: 14px;
+  }
+}
